@@ -128,10 +128,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\KidKinderContext.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\AboutList.cs" />
+    <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\BookASeat.cs" />
     <Compile Include="Entities\ClassRoom.cs" />
@@ -149,7 +151,12 @@
     <Compile Include="Migrations\202402081057034_mig1.designer.cs">
       <DependentUpon>202402081057034_mig1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202402131211461_mig2.cs" />
+    <Compile Include="Migrations\202402131211461_mig2.designer.cs">
+      <DependentUpon>202402131211461_mig2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\SendMessageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -374,10 +381,12 @@
     <Content Include="Views\Default\PartialTestimonial.cshtml" />
     <Content Include="Views\Default\PartialFooter.cshtml" />
     <Content Include="Views\Default\PartialScripts.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\ContactHeaderPartial.cshtml" />
+    <Content Include="Views\Contact\ContactAddressPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -395,6 +404,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202402081057034_mig1.resx">
       <DependentUpon>202402081057034_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402131211461_mig2.resx">
+      <DependentUpon>202402131211461_mig2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
