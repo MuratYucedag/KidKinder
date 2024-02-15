@@ -1,0 +1,29 @@
+﻿@model List<KidKinder.Entities.Notification>
+
+<li class="header-notification">
+    <a href="#!" class="waves-effect waves-light">
+        <i class="ti-bell"></i>
+        <span class="badge bg-c-red"></span>
+    </a>
+    <ul class="show-notification">
+        <li>
+            <h6>Bildirimler</h6>
+            <label class="label label-danger">Yeni</label>
+        </li>
+
+        @foreach (var item in Model)
+        {
+            <li class="waves-effect waves-light">
+                <div class="media">
+                    <img class="d-flex align-self-center img-radius" src="@item.ImageUrl" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="notification-user">@item.Title</h5>
+                        <p class="notification-msg">@item.Description</p>
+                        <span class="notification-time">@item.NotificationDate.ToShortDateString()</span>
+                    </div>
+                </div>
+            </li>
+        }
+
+    </ul>
+</li>
