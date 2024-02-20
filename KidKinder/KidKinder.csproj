@@ -630,6 +630,8 @@
     <Content Include="Views\AdminLayout\PartialSidebar.cshtml" />
     <Content Include="Views\AdminLayout\PartialScripts.cshtml" />
     <Content Include="Views\Teacher\TeacherList.cshtml" />
+    <Content Include="Views\Teacher\CreateTeacher.cshtml" />
+    <Content Include="Views\AdminLayout\PartialHeader.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
