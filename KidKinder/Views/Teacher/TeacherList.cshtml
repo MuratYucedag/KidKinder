@@ -5,25 +5,47 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>Öğretmen Listesi</h2>
-
-<table class="table table-bordered">
-    <tr>
-        <th>#</th>
-        <th>Öğretman Adı</th>
-        <th>Alanı</th>
-        <th>Sil</th>
-        <th>Güncelle</th>
-    </tr>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.TeacherId</td>
-            <td>@item.NameSurname</td>
-            <td>@item.Title</td>
-            <td><a href="#" class="btn btn-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-success">Güncelle</a></td>
-        </tr>
-    }
-</table>
-<a href="#" class="btn btn-primary">Yeni Öğretmen Girişi</a>
+<br /><br />
+<div class="card">
+    <div class="card-header">
+        <h5>Öğretmen Listesi Tablosu</h5>
+        <span>Öğretmenler ile ilgili işlemleri yapabileceğiniz alandır.</span>
+        <div class="card-header-right">
+            <ul class="list-unstyled card-option">
+                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                <li><i class="fa fa-window-maximize full-card"></i></li>
+                <li><i class="fa fa-minus minimize-card"></i></li>
+                <li><i class="fa fa-refresh reload-card"></i></li>
+                <li><i class="fa fa-trash close-card"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-block table-border-style">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Ad Soyad</th>
+                        <th>Branş</th>
+                        <th>Sil</th>
+                        <th>Güncelle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.TeacherId</td>
+                            <td>@item.NameSurname</td>
+                            <td>@item.Title</td>
+                            <td><a href="#" class="btn btn-danger">Sil</a></td>
+                            <td><a href="#" class="btn btn-success">Güncelle</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <a href="#" class="btn btn-primary">Yeni Öğretmen Girişi</a>
+        </div>
+    </div>
+</div>
