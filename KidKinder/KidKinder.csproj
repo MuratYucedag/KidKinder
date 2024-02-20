@@ -130,6 +130,7 @@
     <Compile Include="Context\KidKinderContext.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
@@ -164,6 +165,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SendMessageViewModel.cs" />
+    <Compile Include="Models\TeacherViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -446,6 +448,7 @@
     <Content Include="Templates\material_able-main\tabs.html" />
     <Content Include="Templates\material_able-main\tooltip.html" />
     <Content Include="Templates\material_able-main\typography.html" />
+    <Content Include="TextFile1.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -632,9 +635,12 @@
     <Content Include="Views\Teacher\TeacherList.cshtml" />
     <Content Include="Views\Teacher\CreateTeacher.cshtml" />
     <Content Include="Views\AdminLayout\PartialHeader.cshtml" />
+    <Content Include="Views\Teacher\UpdateTeacher.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
