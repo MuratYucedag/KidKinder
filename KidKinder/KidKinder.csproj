@@ -139,6 +139,7 @@
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\BookASeat.cs" />
+    <Compile Include="Entities\Branch.cs" />
     <Compile Include="Entities\ClassRoom.cs" />
     <Compile Include="Entities\Communication.cs" />
     <Compile Include="Entities\Contact.cs" />
@@ -162,6 +163,18 @@
     <Compile Include="Migrations\202402151124153_mig3.cs" />
     <Compile Include="Migrations\202402151124153_mig3.designer.cs">
       <DependentUpon>202402151124153_mig3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402221057430_mig4.cs" />
+    <Compile Include="Migrations\202402221057430_mig4.designer.cs">
+      <DependentUpon>202402221057430_mig4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402221105158_mig5.cs" />
+    <Compile Include="Migrations\202402221105158_mig5.designer.cs">
+      <DependentUpon>202402221105158_mig5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402221113279_mig6.cs" />
+    <Compile Include="Migrations\202402221113279_mig6.designer.cs">
+      <DependentUpon>202402221113279_mig6.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SendMessageViewModel.cs" />
@@ -664,6 +677,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202402151124153_mig3.resx">
       <DependentUpon>202402151124153_mig3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402221057430_mig4.resx">
+      <DependentUpon>202402221057430_mig4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402221105158_mig5.resx">
+      <DependentUpon>202402221105158_mig5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402221113279_mig6.resx">
+      <DependentUpon>202402221113279_mig6.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

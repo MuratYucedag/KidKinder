@@ -21,6 +21,13 @@ namespace KidKinder.Controllers
         [HttpGet]
         public ActionResult CreateTeacher()
         {
+            List<SelectListItem> values = (from x in context.Branches.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.Name,
+                                               Value = x.BranchId.ToString()
+                                           }).ToList();
+            ViewBag.v = values;
             return View();
         }
 
@@ -43,6 +50,13 @@ namespace KidKinder.Controllers
         [HttpGet]
         public ActionResult UpdateTeacher(int id)
         {
+            List<SelectListItem> values = (from x in context.Branches.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.Name,
+                                               Value = x.BranchId.ToString()
+                                           }).ToList();
+            ViewBag.v = values;
             var value = context.Teachers.Find(id);
             return View(value);
         }
@@ -52,7 +66,7 @@ namespace KidKinder.Controllers
             var value = context.Teachers.Find(teacher.TeacherId);
             value.ImageUrl = teacher.ImageUrl;
             value.NameSurname = teacher.NameSurname;
-            value.Title = teacher.Title;
+            value.BranchId = teacher.BranchId;
             context.SaveChanges();
             return RedirectToAction("TeacherList");
         }

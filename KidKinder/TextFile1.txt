@@ -1,10 +1,4 @@
-﻿Dashboard'u komple beraber yapalım
-Ben sadece 1 tane partial alanı yapayım
-Dashboard yapmak yerine birkaç ef sorgusu gösterip çıktılarını metin olarak görüp tasarımda biz yapalım,
-
---------
-Dashboardu Tamamla
-Code First İlişki
+﻿Dashboardu Tamamla
 Session
 Session-->Profile
 Validasyon
