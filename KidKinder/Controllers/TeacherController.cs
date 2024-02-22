@@ -9,6 +9,7 @@ using KidKinder.Entities;
 
 namespace KidKinder.Controllers
 {
+    [Authorize]
     public class TeacherController : Controller
     {
         KidKinderContext context = new KidKinderContext();
